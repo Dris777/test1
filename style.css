@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -14,12 +22,25 @@
     outline: none;
 }
 
-a:focus, a:active {
-    outline: none;
+/*a:focus, a:active {*/
+/*    outline: none;*/
+/*}*/
+
+nav, footer, header, aside {
+    display: block;
 }
 
-/*nav,footer,header,aside{display: block;}*/
-/*html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}*/
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
 input, button, textarea {
     font-family: inherit;
 }
@@ -37,12 +58,18 @@ button::-moz-focus-inner {
     border: 0;
 }
 
-a, a:visited {
+a {
     text-decoration: none;
 }
 
-a:hover {
+a:visited {
     text-decoration: none;
+    color: blue;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: red;
 }
 
 ul li {
@@ -65,8 +92,170 @@ h1, h2, h3, h4, h5, h6 {
 
 :root {
     --mainfont: Montserrat;
+    --mainColor: #737373;
+    --titleColor: #252B42;
+    --lightText: #fff;
+    --btnColor: #FF7B47;
+    --footerColor: #17213C;
 }
 
 body {
     font-family: var(--mainfont);
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--mainColor);
+}
+
+.container {
+    max-width: 1050px;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+.header__container {
+    display: flex;
+    align-items: center;
+    padding: 36px 0px;
+}
+
+.header__logo {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--titleColor);
+    margin-right: 132px;
+}
+
+.header__logo:hover, .header__logo:visited {
+    color: var(--titleColor);
+
+}
+
+.header__list {
+    display: flex;
+    font-weight: 600;
+    color: var(--mainColor);
+}
+
+.header__item:not(:last-child) {
+    margin-right: 12px;
+}
+
+.header__link:visited {
+    color: var(--mainColor);
+}
+
+.header__link:hover {
+    color: var(--btnColor);
+}
+
+
+/*hero*/
+
+.hero {
+    margin-bottom: 80px;
+    background-image: url("./images/background.png");
+    background-size: auto;
+}
+
+.hero__title {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+    color: var(--titleColor);
+    margin-bottom: 35px;
+}
+
+.hero__text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    margin-bottom: 35px;
+}
+
+.hero__list {
+    display: flex;
+}
+
+.hero__item {
+
+}
+
+.hero__link {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: 0.2px;
+    color: #0D5C63;
+    border: 1px solid rgb(13, 92, 99);
+    border-radius: 37px;
+    padding: 10px 36px;
+    display: inline-block;
+}
+
+.hero__link:visited {
+    color: var(--mainColor);
+}
+
+.hero__link:hover, header__link:focus {
+    color: var(--btnColor);
+}
+
+.hero__link--active {
+    border: 0px solid red;
+    background: var(--btnColor);
+    color: var(--lightText);
+    margin-right: 10px;
+}
+
+.hero__link--active:hover {
+    color: #0D5C63;
+}
+
+
+/*our-merits*/
+
+.our-merits__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-merits__item {
+    max-width: 328px;
+    background-color: var(--lightText);
+    outline: 1px solid tomato;
+    padding: 35px 40px;
+}
+
+.our-merits__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.our-merits__item--active {
+    background-color: #0D5C63;
+    color: var(--lightText);
+}
+
+.our-merits__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.3;
+    letter-spacing: 0.1px;
+    color: var(--titleColor);
+    margin-bottom: 10px;
+}
+
+.our-merits__title--active {
+    color: var(--lightText)
+}
+
+.our-merits__text {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
 }

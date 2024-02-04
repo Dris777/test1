@@ -10,87 +10,92 @@
 </head>
 <body>
 <header class='header'>
-	<a class='header__logo' href=''>Relvise
-	</a>
-	<nav class='header__nav'>
-		<ul class='header__list'>
-			<li class='header__item'>
-				<a class='header__link' href=''>Home
-				</a>
-			</li>
-			<li class='header__item'>
-				<a class='header__link' href=''>Product
-				</a>
-			</li>
-			<li class='header__item'>
-				<a class='header__link' href=''>Pricing
-				</a>
-			</li>
-			<li class='header__item'>
-				<a class='header__link' href=''>Contact
-				</a>
-			</li>
-		</ul>
-	</nav>
+	<div class='container header__container'>
+		<a class='header__logo' href=''>Relvise
+		</a>
+		<nav class='header__nav'>
+			<ul class='header__list'>
+				<li class='header__item'>
+					<a class='header__link' href='./'>Home
+					</a>
+				</li>
+				<li class='header__item'>
+					<a class='header__link' href='./'>Product
+					</a>
+				</li>
+				<li class='header__item'>
+					<a class='header__link' href='./'>Pricing
+					</a>
+				</li>
+				<li class='header__item'>
+					<a class='header__link' href='./'>Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
 </header>
 <main class='main'>
 	<section class='hero'>
-		<h1 class='hero__title'>Finance and Consultancy Solution
-		</h1>
-		<p class='hero__text'>We know how large objects will,but things on a small scale.
-		</p>
-		<ul class='hero__list'>
-			<li class='hero__item'>
-				<a class='hero__link' href=''>Get Quote Now
-				</a>
-			</li>
-			<li class='hero__item'>
-				<a class='hero__link' href=''>Learn More
-				</a>
-			</li>
-		</ul>
+		<div class='container'>
+			<h1 class='hero__title'>Finance and <br> Consultancy <br> Solution
+			</h1>
+			<p class='hero__text'>We know how large objects will act, <br>but things on a small scale.
+			</p>
+			<ul class='hero__list'>
+				<li class='hero__item'>
+					<a class='hero__link hero__link--active' href='Get Quote Now'>Get Quote Now
+					</a>
+				</li>
+				<li class='hero__item'>
+					<a class='hero__link' href='Learn More'>Learn More
+					</a>
+				</li>
+			</ul>
+		</div>
 	</section>
 	<section class='our-merits'>
-		<ul class='our-merits__list'>
-			<li class='our-merits__item'>
-				<svg width='48' height='48'>
-					<use xlink:href='./images/sprite.svg#icon-case'></use>
-				</svg>
-				<h2 class='our-merits__title'>Environmental
-					Consulting
-				</h2>
-				<p class='our-merits__text'>We focus on ergonomics and
-					meeting you where you work.
-				</p>
-			</li>
-			
-			<li class='our-merits__item'>
-				<svg width='48' height='48'>
-					<use xlink:href='./images/sprite.svg#icon-shop'></use>
-				</svg>
-				<h2 class='our-merits__title'>Finance and
-					consultancy
-				</h2>
-				<p class='our-merits__text'>Just type what's on your mind
-					and we'll get you there.
-				</p>
-			
-			</li>
-			
-			<li class='our-merits__item'>
-				<!--				TODO DELETE BACKGROUND COLOR FROM SVG-->
-				<svg width='48' height='48' style='background-color: brown'>
-					<use xlink:href='./images/sprite.svg#icon-book'></use>
-				</svg>
-				<h2 class='our-merits__title'>
-					Financial Services
-					Consulting
-				</h2>
-				<p class='our-merits__text'>the quick fox jumps over the
-					lazy dog
-				</p>
-			</li>
-		</ul>
+		<div class='container'>
+			<ul class='our-merits__list'>
+				<li class='our-merits__item'>
+					<svg width='48' height='48'>
+						<use xlink:href='./images/sprite.svg#icon-case'></use>
+					</svg>
+					<h2 class='our-merits__title'>Environmental
+						Consulting
+					</h2>
+					<p class='our-merits__text'>We focus on ergonomics and
+						meeting you where you work.
+					</p>
+				</li>
+				
+				<li class='our-merits__item'>
+					<svg width='48' height='48'>
+						<use xlink:href='./images/sprite.svg#icon-shop'></use>
+					</svg>
+					<h2 class='our-merits__title'>Finance and
+						consultancy
+					</h2>
+					<p class='our-merits__text'>Just type what's on your mind
+						and we'll get you there.
+					</p>
+				
+				</li>
+				
+				<li class='our-merits__item our-merits__item--active'>
+					<svg width='48' height='48' >
+						<use xlink:href='./images/sprite.svg#icon-book'></use>
+					</svg>
+					<h2 class='our-merits__title our-merits__title--active'>
+						Financial Services
+						Consulting
+					</h2>
+					<p class='our-merits__text'>the quick fox jumps over the
+						lazy dog
+					</p>
+				</li>
+			</ul>
+		</div>
 	</section>
 	<section class='statistics'>
 		<h2 class='statistics__title'>Designing Better Experience
@@ -348,19 +353,19 @@
 			<h3 class='footerNav__title'>Company Info</h3>
 			<ul class='footerNavList'>
 				<li class='footerNavList__item'>
-					<a class='footerNavList__link' href=''>About Us
+					<a class='footerNavList__link' href='./'>About Us
 					</a>
 				</li>
 				<li class='footerNavList__item'>
-					<a class='footerNavList__link' href=''>Carrier
+					<a class='footerNavList__link' href='./'>Carrier
 					</a>
 				</li>
 				<li class='footerNavList__item'>
-					<a class='footerNavList__link' href=''>We are hiring
+					<a class='footerNavList__link' href='./'>We are hiring
 					</a>
 				</li>
 				<li class='footerNavList__item'>
-					<a class='footerNavList__link' href=''>Blog
+					<a class='footerNavList__link' href='./'>Blog
 					</a>
 				</li>
 			</ul>
