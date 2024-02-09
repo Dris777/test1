@@ -60,6 +60,7 @@ button::-moz-focus-inner {
 
 a {
     text-decoration: none;
+    display: block;
 }
 
 a:visited {
@@ -108,8 +109,9 @@ body {
 
 .container {
     max-width: 1050px;
-    padding: 0px;
+    padding: 0px 15px;
     margin: 0 auto;
+    box-sizing: content-box;
 }
 
 /*header*/
@@ -117,7 +119,12 @@ body {
 .header__container {
     display: flex;
     align-items: center;
-    padding: 36px 0px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    position: absolute;
+    left: 220px;
+    top: 0;
+    z-index: 1;
 }
 
 .header__logo {
@@ -155,9 +162,12 @@ body {
 /*hero*/
 
 .hero {
-    margin-bottom: 80px;
     background-image: url("./images/background.png");
-    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 184px;
+    padding-bottom: 191px;
+    position: relative;
 }
 
 .hero__title {
@@ -218,6 +228,11 @@ body {
 
 
 /*our-merits*/
+.our-merits {
+    margin-top: -80px;
+    z-index: 2;
+    position: relative;
+}
 
 .our-merits__list {
     display: flex;
@@ -227,8 +242,8 @@ body {
 .our-merits__item {
     max-width: 328px;
     background-color: var(--lightText);
-    outline: 1px solid tomato;
     padding: 35px 40px;
+    /*width: calc((100% - 60px) / 3)*/
 }
 
 .our-merits__item:not(:last-child) {
@@ -259,3 +274,5 @@ body {
     line-height: 1.4;
     letter-spacing: 0.2px;
 }
+
+/*statistic*/
